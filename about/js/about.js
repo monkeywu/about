@@ -6,8 +6,8 @@ $('document').ready(function(){
 		if($(this).scrollTop()>100){
 			$('.about').css({'height':'60px','border-bottom':'1px solid #333'})
 		}
-		if($(this).scrollTop()<790){
-			$('.p1,.p2,.p3,.p4').css({'width':'0%',})
+		if($(this).scrollTop()<100){
+			$('.percent').css({'width':'0%'})
 		}
 		if($(this).scrollTop()>790){
 			$('.p1').css({'width':'80%',})
@@ -21,7 +21,18 @@ $('document').ready(function(){
 		if($(this).scrollTop()>790){
 			$('.p4').css({'width':'82%',})
 		}
+		if($(this).scrollTop()>2550){
+			$('.count').each(function () {
+		    	$(this).prop('Counter',0).animate({
+		        Counter: $(this).text()
+		    }, {
+		        duration: 4000,
+		        easing: 'swing',
+		        step: function (now) {
+		            $(this).text(Math.ceil(now));
+			        }
+			    });
+			});
+		}
 	})
 })
-
-
