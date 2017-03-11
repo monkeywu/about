@@ -18,7 +18,7 @@ $('document').ready(function(){
 		if($(this).scrollTop()>450){
 			$('.p4').css({'width':'82%',})
 		}
-		if($(this).scrollTop()>2550){
+		if($(this).scrollTop()>2300){
 			$('.count').each(function () {
 		    	$(this).prop('Counter',0).animate({
 		        Counter: $(this).text()
