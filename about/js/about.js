@@ -6,6 +6,12 @@ $('document').ready(function(){
 		if($(this).scrollTop()>100){
 			$('.about').css({'height':'60px','border-bottom':'1px solid #333'})
 		}
+		if($(this).scrollTop()<790){
+			$('.percent').css({'width':'0%',})
+		}
+		if($(this).scrollTop()>790){
+			$('.percent').css({'width':'80%',})
+		}
 	})
 })
 
