@@ -1,0 +1,366 @@
+golden = #d6b161;
+*
+	box-sizing border-box
+body
+	font-family "Source Sans Pro", sans-serif
+	font-size 15px
+	font-weight 400
+	line-height 1.5
+i 
+	font-style normal
+p
+	color #7e7e7e
+	line-height 30px
+h2 
+	margin 0 
+h3 
+	margin 0
+ul
+	margin 0 
+	list-style-type none
+img
+	display block
+a 
+	text-decoration none
+	transition all 0.3s
+	display inline-block
+	color #333
+	
+a:hover {
+	text-decoration none
+	color golden
+}
+#content > div {
+	padding-top:100px;
+	}
+				/* about */
+#go-top
+	position fixed
+	right 20px 
+	bottom 20px
+	width 40px
+	height 40px
+	text-align center
+	background rgba(0, 0, 0, .6)
+	line-height 40px
+	transition all 0.3s
+	&:hover
+		background golden
+	i
+		display block
+		a
+			color #fff
+			&:hover
+				color #333
+.wrap 
+	height 100px
+.about
+	height 100px
+	background white
+	transition height 0.3s
+	position fixed
+	z-index 100
+	width 100%
+.full-width
+	width 100%
+	height 100%
+	padding 0 30px
+	.row
+		height 100%
+		.logo
+			height 100%
+			a
+				height 100%
+				img 
+					height 100%
+					width auto
+					transition height 0.3s
+		.nav
+			transform translateY(-50%)
+			position relative
+			top 50%
+			a
+				padding 0 12px
+				font-size 12px
+				text-transform uppercase
+				letter-spacing 2px
+.boundary:after
+	content '|'
+	padding 0 12px
+//       content     //
+.header
+	height auto
+	padding 200px 0
+	background-image url("../image/1.jpg")
+	background-repeat no-repeat
+	background-position 50% 0
+	background-size cover
+	height 48px
+	h3
+		color #fff
+		letter-spacing 2px
+		font-weight normal
+		font-size 20px
+		position relative
+		top 50%
+		transform translateY(-50%)
+.breadcrumb
+	padding 15px
+	background rgba(0, 0, 0, .5)
+	margin 0
+	color white
+	font-weight 100
+	font-size 12px
+	li
+		letter-spacing 1px
+		a
+			color #7e7e7e
+			&:hover
+				color #fff
+.item img
+	width 100%
+.carousel-control .glyphicon
+	opacity 0
+	transition opacity 0.3s
+.carousel-control:hover
+	.glyphicon
+		opacity 1
+.carousel-indicators
+	top 93%
+	left 93%
+h4
+	margin 0 0 30px
+	line-height 1.5
+	font-weight 200
+.skill h4
+	letter-spacing 2px
+	font-weight normal
+.bar 
+	background #eae8e8
+	margin-bottom 50px
+.percent
+	background black
+	color white
+	font-size 10px
+	line-height 24px
+	text-align left
+	padding-left 10px
+	position relative
+	font-weight 100
+	letter-spacing 1px
+	display inline-block
+.pin 
+	position relative
+	display inline-block
+	top -30px
+	left -30px
+	font-size 12px
+	background rgba(0,0,0,0.6)
+	color white
+	padding 3px 8px
+	border-radius 14px
+	&:after
+		top 100%
+		left 50%
+		border solid transparent
+		content " "
+		height 0
+		width 0
+		position absolute
+		pointer-events none
+		border-top-color rgba(0,0,0,0.6)
+		border-width 4px
+		margin-left -4px
+.dark-content
+	background-image url("../image/2.jpg")
+	background-size cover
+	background-repeat no-repeat
+	background-attachment fixed
+	.dark-bg
+		background rgba(0,0,0,0.5)
+		.row
+			padding 100px 0
+			text-align center
+			color golden
+			i
+				font-size 36px
+			h4
+				margin-bottom 20px
+				letter-spacing 1px
+				font-weight normal
+				color #fff
+				padding-top 30px
+			p
+				color #fff
+.members
+	text-align center
+	.title
+		margin-bottom 100px
+		h3
+			letter-spacing 2px
+			font-weight normal
+			line-height 1.5
+		p 
+			letter-spacing 1px
+			color #7e7e7e
+			font-size 12px
+			text-transform uppercase
+			margin 0
+			font-weight 200
+	ul
+		padding-left 0
+.team-member
+	position relative
+	width 330px
+	height 330px
+	img
+		width 100%
+		height auto
+	.cover
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		margin: 0;
+		transition: all .3s;
+		opacity: 0;
+		border: 20px solid rgba(0, 0, 0, .1);
+		background-color: rgba(255, 255, 255, .9);
+		&:hover
+			opacity 1
+		.desk
+			top 20%
+			position relative
+			h4
+				margin-bottom 25px
+				letter-spacing 4px
+				text-transform uppercase
+				font-size 14px
+			p
+				font-size 12px
+		.s-link
+			position absolute
+			bottom 5%
+			left 50%
+			transform translateX(-50%)
+			a
+				font-size 16px
+				margin 0 10px
+.teamtitle
+	display inline-block
+	width 100%
+	padding 20px 0
+	letter-spacing 2px
+	text-align left
+	.name
+		font-size 14px
+		letter-spacing 1px
+		line-height 1.5
+	.job
+		letter-spacing 1px
+		color #a5a5a5
+		font-size 12px
+		line-height 1.5
+.gray-content
+	padding 100px 0 
+	background #f5f5f5
+	text-align center
+	i
+		font-size 36px
+	h1
+		font-size 36px
+		letter-spacing 2px
+		font-weight normal
+	p
+		letter-spacing 1px
+		color #222
+		margin 0
+		line-height 1.5
+.clients
+	padding 100px 0
+	.title
+		text-align center
+		margin-bottom 100px
+		h3
+			letter-spacing 2px
+			font-weight normal
+			line-height 1.5
+		p
+			font-size 13px
+			margin 0 0 30px
+.client
+	text-align center
+	img
+		float left
+		margin 0 10px
+#footer
+	background #222
+	.footer
+		background #222
+		padding 80px 0
+		.b-logo a
+			margin-bottom 20px
+			img
+				height 100px
+				width auto
+			p
+				font-size 14px
+				margin 0 0 30px
+	h5 
+		color #fff
+		letter-spacing 1px
+		margin 0 0 30px 0
+		font-weight 100
+		line-height 1.5
+	.list
+		padding 0
+		li
+			border-bottom 1px solid #333
+			display block
+			a
+				line-height 45px
+				color #a2a2a2
+				font-weight 200
+				font-size 14px
+				&:before
+					content '>'
+					padding-right 15px
+				&:hover
+					color golden
+	.r-work
+		padding 0
+		a
+			height 55px
+			width 55px
+			margin 0 10px 10px 0
+			img
+				width 100%
+				height auto
+.black
+	padding 35px 0
+	border-top 1px solid #2c2c2c
+	background #1b1b1b
+	span 
+		color #6f7273
+		font-size 14px
+		font-weight 200
+		margin-top 10px
+		display inline-block
+		a
+			color #fff
+			&:hover
+				color golden
+	.social-media a
+		color #6f7273
+		width 35px
+		height 35px
+		text-align center
+		border 1px solid #5a5a5a
+		border-radius: 50%
+		line-height: 35px
+		margin-left 15px
+		font-size 20px
+		&:hover 
+			background #5a5a5a
+			color #fff						
