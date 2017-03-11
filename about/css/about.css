@@ -112,7 +112,7 @@ a:hover {
 .header {
   height: auto;
   padding: 200px 0;
-  background-image: url("../image/1.jpg");
+  background-image: url("about//image/1.jpg");
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
@@ -208,7 +208,7 @@ h4 {
   margin-left: -4px;
 }
 .dark-content {
-  background-image: url("../image/2.jpg");
+  background-image: url("about//image/2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
