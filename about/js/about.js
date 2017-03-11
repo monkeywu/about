@@ -6,19 +6,16 @@ $('document').ready(function(){
 		if($(this).scrollTop()>100){
 			$('.about').css({'height':'60px','border-bottom':'1px solid #333'})
 		}
-		if($(this).scrollTop()<100){
-			$('.percent').css({'width':'0%'})
-		}
-		if($(this).scrollTop()>790){
+		if($(this).scrollTop()>400){
 			$('.p1').css({'width':'80%',})
 		}
-		if($(this).scrollTop()>790){
+		if($(this).scrollTop()>400){
 			$('.p2').css({'width':'90%',})
 		}
-		if($(this).scrollTop()>790){
+		if($(this).scrollTop()>450){
 			$('.p3').css({'width':'75%',})
 		}
-		if($(this).scrollTop()>790){
+		if($(this).scrollTop()>450){
 			$('.p4').css({'width':'82%',})
 		}
 		if($(this).scrollTop()>2550){
