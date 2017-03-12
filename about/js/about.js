@@ -18,29 +18,58 @@ $('document').ready(function(){
 		if($(this).scrollTop()>450){
 			$('.p4').css({'width':'82%',})
 		}
-		if($(this).scrollTop()>2300){
-			var runOnce = false 
-			if(!runOnce) {
-			  runOnce = true
-			  AnimateNumber()
-			}
-		}
 	})
 })
 
-var AnimateNumber = function() {
-  $('.count').each(function () {
-    $(this).prop('Counter',0).animate({
-        Counter: $(this).text()
-    }, {
-        duration: 4000,
-        easing: 'swing',
-        step: function (now) {
-            $(this).text(Math.ceil(now));
-        }
+$('document').ready(function(){
+	$(function () {
+        var fx = function fx() {
+          var dfd = $(".count").map(function (i, el) {
+              var data = parseInt(this.dataset.n, 10);
+              var props = {
+                "from": {
+                    "count": 0
+                },
+                "to": {
+                    "count": data
+                }
+              };
+            return $(props.from).animate(props.to, {
+                duration: 3000 * 1,
+                step: function (now, fx) {
+                    $(el).text(Math.ceil(now));
+                },
+                complete: function() {
+                   if (el.dataset.sym !== undefined) {
+                  el.textContent = el.textContent.concat(el.dataset.sym)
+                   }
+                }
+            }).promise();
+        }).toArray();
+            // return jQuery promise when all animations complete
+            return $.when.apply($, dfd);
+        };      
+        var reset = function reset() {
+          console.log($(this).scrollTop());
+            // do stuff when window `.scrollTop()` > 75
+            if ($(this).scrollTop() > 2200) {
+              // turn off scroll event so `fx` not called
+              // during ongoing animation
+              $(this).off("scroll");
+                // when all animations complete
+                fx()
+            }
+        };
+        // if `fx` should only be called once ,
+        // change `.on()` to `.one()` ,
+        // remove `.then()` callback following `fx()`
+        // within `reset`
+        $(window).on("scroll", reset);
     });
-});
-}
+}) 
+
+
+
 
 
 
