@@ -6,16 +6,16 @@ $('document').ready(function(){
 		if($(this).scrollTop()>100){
 			$('.about').css({'height':'60px','border-bottom':'1px solid #333'})
 		}
-		if($(this).scrollTop()>1000){
+		if($(this).scrollTop()>900){
 			$('.p1').css({'display':'inline-block','width':'80%',})
 		}
-		if($(this).scrollTop()>1000){
+		if($(this).scrollTop()>900){
 			$('.p2').css({'display':'inline-block','width':'90%',})
 		}
-		if($(this).scrollTop()>1000){
+		if($(this).scrollTop()>900){
 			$('.p3').css({'display':'inline-block','width':'75%',})
 		}
-		if($(this).scrollTop()>1000){
+		if($(this).scrollTop()>900){
 			$('.p4').css({'display':'inline-block','width':'82%',})
 		}
 	})
