@@ -181,7 +181,7 @@ h4 {
   position: relative;
   font-weight: 100;
   letter-spacing: 1px;
-  display: inline-block;
+  display: block;
   transition: all 1s;
   width:0%;
 }

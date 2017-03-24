@@ -7,16 +7,16 @@ $('document').ready(function(){
 			$('.about').css({'height':'60px','border-bottom':'1px solid #333'})
 		}
 		if($(this).scrollTop()>1000){
-			$('.p1').css({'width':'80%',})
+			$('.p1').css({'display':'inline-block','width':'80%',})
 		}
 		if($(this).scrollTop()>1000){
-			$('.p2').css({'width':'90%',})
+			$('.p2').css({'display':'inline-block','width':'90%',})
 		}
 		if($(this).scrollTop()>1000){
-			$('.p3').css({'width':'75%',})
+			$('.p3').css({'display':'inline-block','width':'75%',})
 		}
 		if($(this).scrollTop()>1000){
-			$('.p4').css({'width':'82%',})
+			$('.p4').css({'display':'inline-block','width':'82%',})
 		}
 	})
 })
