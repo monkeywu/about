@@ -170,6 +170,7 @@ h4 {
 .bar {
   background: #eae8e8;
   margin-bottom: 50px;
+  height:24px;
 }
 .percent {
   background: #000;
@@ -184,6 +185,7 @@ h4 {
   display: block;
   transition: all 1s;
   width:0%;
+  height: 100%;
 }
 .pin {
   position: relative;
